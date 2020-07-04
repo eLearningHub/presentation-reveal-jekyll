@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="dark">
+<head>
+  <meta charset="utf-8">
+
+<title>reveal-jekyll</title>
+
+<meta name="author" content="Thomas Friese">
+<meta name="description" content="Reveal.js for Jekyll with Solarized Color theme">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<!-- jQuery -->
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/reveal.js/css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+</script>
+
+<!--[if lt IE 9]>
+<script src="/reveal.js/lib/js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			
+	<section  class="step slide" >
+  
+
+  <h1 id="revealjs"><a href="http://lab.hakim.se/reveal-js/" class="external">Reveal.js</a></h1>
+
+<h2 id="html-presentations-made-easy">HTML Presentations Made Easy</h2>
+
+<h4 id="created-by-hakim-el-hattab--hakimel">Created by <a href="http://hakim.se" class="external">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel" class="twitter">@hakimel</a></h4>
+
+<p>Remixed by <a href="http://tasmo.rocks/" class="external">Thomas Friese</a> / <a href="http://twitter.com/_Tasmo" class="twitter">@_Tasmo</a></p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Heads Up</h1>
+
+  <p>reveal.js is a framework for easily creating beautiful presentations using HTML. You’ll need a browser with support for CSS 3D transforms to see it in its full glory.</p>
+
+<p>reveal-jekyll turns Markdown files to slides with the power of Jekyll.</p>
+
+<aside class="notes">
+  <p>Oh hey, these are some notes. They’ll be hidden in your presentation, but you can see them if you open the speaker notes window (hit ‘s’ on your keyboard).</p>
+</aside>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  
+
+  <section>
+
+  <h2 id="vertical-slides">Vertical Slides</h2>
+
+  <p>Slides can be nested inside of other slides,<br />
+try pressing <a href="#" class="navigate-down">down</a>.</p>
+
+  <p><a href="#" class="image navigate-down"><img src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow" /></a></p>
+
+</section>
+<section>
+
+  <h2 id="basement-level-1">Basement Level 1</h2>
+
+  <p>Press down or up to navigate.</p>
+
+</section>
+<section>
+
+  <h2 id="basement-level-2">Basement Level 2</h2>
+
+  <p>Cornify</p>
+
+  <p><a href="http://cornify.com" class="test external"><img src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn" /></a></p>
+
+</section>
+<section>
+
+  <h2 id="basement-level-3">Basement Level 3</h2>
+
+  <p>That’s it, time to go back up.</p>
+
+  <p><a href="#/2"><img src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg);-webkit-transform: rotate(180deg);" /></a></p>
+
+</section>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>slides</h1>
+
+  <p>Not a coder? No problem. There’s a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" class="external">http://slid.es</a>.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Point of View</h1>
+
+  <p>Press <code class="highlighter-rouge">ESC</code> to enter the slide overview.</p>
+
+<p>Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js" class="external">zoom.js</a>. <code class="highlighter-rouge">Alt</code> + <code class="highlighter-rouge">click</code> anywhere to zoom back out.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Works in Modern Mobile Browsers</h1>
+
+  <p>Try it out! You can swipe through the slides and pinch your way to the overview.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Marvelous Unordered List</h1>
+
+  <ul>
+  <li>No order here</li>
+  <li>Or here</li>
+  <li>Or here</li>
+  <li>Or here</li>
+</ul>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Fantastic Ordered List</h1>
+
+  <ol>
+  <li>One is smaller than…</li>
+  <li>Two is smaller than…</li>
+  <li>Three!</li>
+</ol>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Markdown support</h1>
+
+  <p>Every Markdown file in <code class="highlighter-rouge">_posts</code> becomes a single slide in “reveal-jekyll”.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">slide</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Markdown support</span>
+<span class="nn">---</span>
+ 
+Every Markdown file in <span class="sb">`_posts`</span> becomes a single slide in "reveal-jekyll".</code></pre></figure>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Transition Styles</h1>
+
+  <p>You can select from different transitions, like:</p>
+
+<h3 id="cube---page---concave---zoom---linear---fade---none---default"><a href="?transition=cube#/9">Cube</a> - <a href="?transition=page#/9">Page</a> - <a href="?transition=concave#/9">Concave</a> - <a href="?transition=zoom#/9">Zoom</a> - <a href="?transition=linear#/9">Linear</a> - <a href="?transition=fade#/9">Fade</a> - <a href="?transition=none#/9">None</a> - <a href="?transition=default#/9">Default</a></h3>
+
+<p>May may change this in the <code class="highlighter-rouge">_config.yml</code> configuration file.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Themes</h1>
+
+  <p><a href="https://github.com/tasmo/reveal-jekyll" class="external">“reveal-jekyll”</a> is based on <a href="http://ethanschoonover.com/solarized" class="external">Solarized colors by Ethan Schoonover</a> containing</p>
+
+<h3 id="a-light-and-a-dark-theme">a <a href="#/10" class="button lighter"><code class="highlighter-rouge">light</code></a> and a <a href="#/10" class="button darker"><code class="highlighter-rouge">dark</code></a> theme.</h3>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Global State</h1>
+
+  <p>Set <code class="highlighter-rouge">data-state="something"</code> on a slide and <code class="highlighter-rouge">"something"</code>
+will be added as a class to the document element when the slide is open. This lets you
+apply broader style changes, like switching the background.</p>
+
+<p>In “reveal-jekyll” you can do this by setting it in the Front-matter of the slide like this:</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">data</span><span class="pi">:</span>
+  <span class="na">state</span><span class="pi">:</span> <span class="s">something</span>
+<span class="nn">---</span></code></pre></figure>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide"  data-state="customevent">
+  <h1>Custom Events</h1>
+
+  <p>Additionally custom events can be triggered on a per slide basis by binding to the <code class="highlighter-rouge">data-state</code> name.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Reveal</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span> <span class="dl">'</span><span class="s1">customevent</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="dl">'</span><span class="s1">"customevent" has fired</span><span class="dl">'</span> <span class="p">);</span>
+<span class="p">}</span> <span class="p">);</span></code></pre></figure>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  
+
+  <section data-background="#cb4b16">
+
+  <h2 id="slide-backgrounds">Slide Backgrounds</h2>
+
+  <p>Set <code class="highlighter-rouge">data-background="#cb4b16"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.</p>
+
+  <figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">data</span><span class="pi">:</span>
+  <span class="na">background</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#cb4b16'</span>
+<span class="nn">---</span></code></pre></figure>
+
+  <p><a href="#" class="image navigate-down"><img src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow" /></a></p>
+
+</section>
+<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+
+  <h2 id="image-backgrounds">Image Backgrounds</h2>
+
+  <figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">data</span><span class="pi">:</span>
+  <span class="na">background</span><span class="pi">:</span> <span class="s">image.png</span>
+<span class="nn">---</span></code></pre></figure>
+
+</section>
+<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
+
+  <h2 id="repeated-image-backgrounds">Repeated Image Backgrounds</h2>
+
+  <figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">data</span><span class="pi">:</span>
+  <span class="na">background</span><span class="pi">:</span> <span class="s">image.png</span>
+  <span class="na">background-repeat</span><span class="pi">:</span> <span class="s">repeat</span>
+  <span class="na">background-size</span><span class="pi">:</span> <span class="s">100px</span>
+<span class="nn">---</span></code></pre></figure>
+
+</section>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide"  data-transition="zoom" data-background="#d33682" data-background-transition="slide">
+  <h1>Background Transitions</h1>
+
+  <p>Pass reveal.js the <code class="highlighter-rouge">backgroundTransition: 'zoom'</code> config argument to make backgrounds zoom rather than slide.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide"  data-transition="linear" data-background="#dc322f" data-background-transition="zoom">
+  <h1>Background Transition Override</h1>
+
+  <p>You can override background transitions per slide by using<br />
+<code class="highlighter-rouge">data:  background-transition: zoom</code>.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Clever Quotes</h1>
+
+  <p>These guys come in two forms, inline: <em>“The nice thing about standards is that there are so many to choose from”</em> and block:</p>
+
+<blockquote>
+  <p>For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.</p>
+</blockquote>
+
+<aside class="notes">
+  <p>http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations</p>
+
+</aside>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Pretty Code</h1>
+
+  
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">linkify</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span> <span class="nx">supports3DTransforms</span> <span class="p">)</span> <span class="p">{</span>
+ 
+    <span class="kd">var</span> <span class="nx">nodes</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">);</span>
+ 
+    <span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+ 
+      <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">node</span><span class="p">.</span><span class="nx">className</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">node</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1"> roll</span><span class="dl">'</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Courtesy of <a href="https://github.com/jneen/rouge" class="external">Rouge</a>.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Intergalactic Interconnections</h1>
+
+  <p>You can link between slides internally,<br />
+<a href="#/2/3">like this</a>.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  
+
+  <section id="fragments">
+
+<h2>Fragmented Views</h2>
+
+<p data-fragment-index="1" class="fragment">... to step through ...</p>
+<ol>
+  <li data-fragment-index="2" class="fragment"><code>any type</code></li>
+  <li data-fragment-index="3" class="fragment"><em>of view</em></li>
+  <li data-fragment-index="4" class="fragment"><strong>fragments</strong></li>
+</ol>
+
+<aside class="notes">
+  This slide has fragments which are also stepped through in the notes window.
+</aside>
+
+</section>
+
+<section>
+
+<h2>Fragment Styles</h2>
+<p>There's a few styles of fragments, like:</p>
+<p data-fragment-index="5" class="fragment grow">grow</p>
+<p data-fragment-index="6" class="fragment shrink">shrink</p>
+<p data-fragment-index="7" class="fragment roll-in">roll-in</p>
+<p data-fragment-index="8" class="fragment fade-out">fade-out</p>
+<p data-fragment-index="9" class="fragment highlight-red">highlight-red</p>
+<p data-fragment-index="10" class="fragment highlight-green">highlight-green</p>
+<p data-fragment-index="11" class="fragment highlight-blue">highlight-blue</p>
+<p data-fragment-index="12" class="fragment current-visible">current-visible</p>
+<p data-fragment-index="13" class="fragment highlight-current-blue">highlight-current-blue</p>
+
+</section>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Spectacular image!</h1>
+
+  <p><a href="http://lab.hakim.se/meny/" class="image external"><img src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny" /></a></p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Export to PDF</h1>
+
+  <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export" class="external">exported to PDF</a>, below is an example that’s been uploaded to SlideShare.</p>
+
+<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" style="height:356px;width:455px;margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen=""></iframe>
+<script>
+  document.getElementById('slideshare').attributeName = 'allowfullscreen';
+</script>
+
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Take a Moment</h1>
+
+  <p>Press <code class="highlighter-rouge">b</code> or <code class="highlighter-rouge">period</code> on your keyboard to enter the ‘paused’ mode. This mode is helpful when you want to take distracting slides off the screen during a presentation.</p>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide" >
+  <h1>Stellar Links</h1>
+
+  <ul>
+  <li><a href="http://slid.es" class="external">Try the online editor</a></li>
+  <li><a href="https://github.com/hakimel/reveal.js" class="external">Source code of Reveal.js on GitHub</a></li>
+  <li><a href="http://twitter.com/hakimel" class="twitter">Hakim El Hattab on Twitter</a></li>
+</ul>
+
+<h3 id="reveal-jekyll">reveal-jekyll</h3>
+
+<p>Made for my workshop <a href="http://rp14.tasmo.de/#/" class="external">“re:claim your blog engine”</a> at <a href="http://re-publica.de/session/einfach-bloggen-markdown-text-git-und-jekyll" class="external">re:publica 2014</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/tasmo/reveal-jekyll" class="external">This source code on GitHub</a></li>
+  <li>
+    <p><a href="http://twitter.com/_tasmo" class="twitter">Thomas Friese on Twitter</a></p>
+  </li>
+  <li><a href="http://jekyllrb.com/" class="external">Jekyll</a></li>
+  <li><a href="http://ethanschoonover.com/solarized" class="external">Solarized colors</a></li>
+</ul>
+
+</section>
+	<div class="page-break"></div>
+
+	<section  class="step slide"  data-background="black">
+  
+
+  <h3 data-fragment-index="1" class="fragment fade-out" style="-webkit-transition-duration: 3s; -moz-transition-duration: 3s; transition-duration: 3s; -webkit-transition-delay: 3s; -moz-transition-delay: 3s; transition-delay: 3s;">this is</h3>
+<h1 data-fragment-index="1" class="fragment fade-in" style="-webkit-transition-duration: 2s; -moz-transition-duration: 2s; transition-duration: 2s;"><span data-fragment-index="1" class="fragment fade-out" style="-webkit-transition-duration: 6s; -moz-transition-duration: 6s; transition-duration: 6s; -webkit-transition-delay: 9s; -moz-transition-delay: 9s; transition-delay: 9s;">the end</span></h1>
+<h6 data-fragment-index="1" class="fragment fade-in" style="-webkit-transition-duration: 2s; -moz-transition-duration: 2s; transition-duration: 2s; -webkit-transition-delay: 3s; -moz-transition-delay: 3s; transition-delay: 3s;"><span data-fragment-index="1" class="fragment fade-out" style="-webkit-transition-duration: 3s; -moz-transition-duration: 3s; transition-duration: 3s; -webkit-transition-delay: 6s; -moz-transition-delay: 6s; transition-delay: 6s;">(at this point the grand finale is playing)</span></h6>
+<p><span data-fragment-index="1" class="fragment fade-in" style="-webkit-transition-duration: 2s; -moz-transition-duration: 2s; transition-duration: 2s; -webkit-transition-delay: 14s; -moz-transition-delay: 14s; transition-delay: 14s;">“<a href="https://github.com/tasmo/reveal-jekyll">reveal-jekyll</a>” by <a href="http://tasmo.rocks/">Thomas Friese</a></span></p>
+
+</section>
+	<div class="page-break"></div>
+
+
+
+
+
+		</div>
+	</div>
+	<script src="/reveal.js/lib/js/head.min.js"></script>
+<script src="/reveal.js/js/reveal.js"></script>
+
+<!-- reveal.js init -->
+<script>
+  var baseUrl = ""
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    
+    controls: true,
+    progress: true,
+    history: true,
+    keyboard: true,
+    overview: true,
+    center: true,
+    touch: true,
+    loop: false,
+    fragments: true,
+    transition: 'linear',
+    backgroundTransition: 'slide',
+    width: 1000,
+    height: 920,
+    margin: '0.1',
+    minScale: '0.2',
+    maxScale: '1.5',
+    
+    
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+      // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+      { src: baseUrl + '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+      // Zoom in and out with Alt+click
+      { src: baseUrl + '/reveal.js/plugin/zoom-js/zoom.js', async: true },
+
+      // Speaker notes
+      { src: baseUrl + '/reveal.js/plugin/notes/notes.js', async: true },
+
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: baseUrl + '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+      // MathJax
+      { src: baseUrl + '/reveal.js/plugin/math/math.js', async: true }
+    ]
+  });
+
+  
+  // Shows the slide number using default formatting
+  Reveal.configure({ slideNumber: true });
+  Reveal.configure({ slideNumber: 'c/t' });
+  
+</script>
+<!-- End reveal.js init -->
+
+<!-- Fontawesome -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    //$("a[href*='youtube.com/']").prepend( $( "<i class='fa fa-youtube-play'>&nbsp;</i>" ) );
+    //$("a[href*='vimeo.com/']").prepend( $( "<i class='fa fa-vimeo-square'>&nbsp;</i>" ) );
+    //$("a[href$='/download']").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
+    //$("a.download").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
+    $("a.external").append( $( "<i class='fa fa-external-link'></i>" ) );
+    $("a.twitter").append( $( "<i class='fa fa-twitter'></i>" ) );
+    $("a.github").append( $( "<i class='fa fa-github'></i>" ) );
+    $("blockquote").prepend( $( "<i class='fa fa-quote-left'></i>" ) );
+    $("a.button.lighter").click( function() { $("html.dark").removeClass("dark").addClass("light"); });
+    $("a.button.darker").click( function() { $("html.light").removeClass("light").addClass("dark"); });
+  });
+</script>
+<!-- End Fontawesome -->
+
+</body>
+</html>
+

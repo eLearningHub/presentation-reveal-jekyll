@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<title>reveal-jekyll</title>
+
+<meta name="author" content="Thomas Friese">
+<meta name="description" content="Reveal.js for Jekyll with Solarized Color theme">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<!-- jQuery -->
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/reveal.js/css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+</script>
+
+<!--[if lt IE 9]>
+<script src="/reveal.js/lib/js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="step">
+      <p>Press <code class="highlighter-rouge">b</code> or <code class="highlighter-rouge">period</code> on your keyboard to enter the ‘paused’ mode. This mode is helpful when you want to take distracting slides off the screen during a presentation.</p>
+
+    </div>
+  </div>
+</body>
+</html>
+

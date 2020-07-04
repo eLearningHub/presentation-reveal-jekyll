@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<title>reveal-jekyll</title>
+
+<meta name="author" content="Thomas Friese">
+<meta name="description" content="Reveal.js for Jekyll with Solarized Color theme">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<!-- jQuery -->
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/reveal.js/css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+</script>
+
+<!--[if lt IE 9]>
+<script src="/reveal.js/lib/js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="step">
+      <section id="fragments">
+
+<h2>Fragmented Views</h2>
+
+<p data-fragment-index="1" class="fragment">... to step through ...</p>
+<ol>
+  <li data-fragment-index="2" class="fragment"><code>any type</code></li>
+  <li data-fragment-index="3" class="fragment"><em>of view</em></li>
+  <li data-fragment-index="4" class="fragment"><strong>fragments</strong></li>
+</ol>
+
+<aside class="notes">
+  This slide has fragments which are also stepped through in the notes window.
+</aside>
+
+</section>
+
+<section>
+
+<h2>Fragment Styles</h2>
+<p>There's a few styles of fragments, like:</p>
+<p data-fragment-index="5" class="fragment grow">grow</p>
+<p data-fragment-index="6" class="fragment shrink">shrink</p>
+<p data-fragment-index="7" class="fragment roll-in">roll-in</p>
+<p data-fragment-index="8" class="fragment fade-out">fade-out</p>
+<p data-fragment-index="9" class="fragment highlight-red">highlight-red</p>
+<p data-fragment-index="10" class="fragment highlight-green">highlight-green</p>
+<p data-fragment-index="11" class="fragment highlight-blue">highlight-blue</p>
+<p data-fragment-index="12" class="fragment current-visible">current-visible</p>
+<p data-fragment-index="13" class="fragment highlight-current-blue">highlight-current-blue</p>
+
+</section>
+
+    </div>
+  </div>
+</body>
+</html>
+
